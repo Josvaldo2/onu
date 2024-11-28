@@ -1,23 +1,45 @@
-let time = 0;
+// Javascript para o contador de tempo da ONU, programado por Augusto V.
+
+let counterInterval;
+let startTime;
 let counterStatus = false;
 
-let secondsDisplay = document.getElementById("seconds-display")
-let minutesDisplay = document.getElementById("minutes-display")
+let minutes;
+let seconds;
+
+const minutesDisplay = document.getElementById("minutes-display");
+const secondsDisplay = document.getElementById("seconds-display");
+const timesList = document.getElementById("times-list")
 
 function count() {
-    time++;
-    seconds = time%60;
-    minutes = Math.floor(time/60)
+    const currentTime = new Date();
+    const deltaTime = Math.floor((currentTime - startTime) / 1000);
 
-    secondsDisplay.textContent = seconds < 10 ? "0"+seconds : seconds;
+    minutes = Math.floor(deltaTime/60);
+    seconds = deltaTime%60
+
     minutesDisplay.textContent = minutes < 10 ? "0"+minutes : minutes;
+    secondsDisplay.textContent = seconds < 10 ? "0"+seconds : seconds;
 }
 
 function mainCounterFunction() {
-    if (counterStatus == false) {
-        setInterval(count, 1000);
+    if (!counterStatus) {
+        startTime = new Date();
         counterStatus = true;
+        counterInterval = setInterval(count, 20);
+    }
+
+    else {
+        clearInterval(counterInterval);
+        counterStatus = false;
+
+        const lapDiv = document.createElement("div")
+        lapDiv.textContent = `${minutes < 10 ? "0"+minutes : minutes}:${seconds < 10 ? "0"+seconds : seconds}`;
+        timesList.appendChild(lapDiv);
+
+        minutesDisplay.textContent = "00";
+        secondsDisplay.textContent = "00";
     }
 }
 
-document.getElementById("start-button").onclick = mainCounterFunction;
+document.getElementById("main-button").onclick = mainCounterFunction;

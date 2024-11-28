@@ -1,64 +1,59 @@
 body {
-    color: black;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 20px;
-    background-color: white;
+    font-size: 1vw;
+    font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
     text-align: center;
-    padding: 40px;
+
+    margin: 0;
+    padding: 30px 00px;
+    background-color: #009edb
 }
 
 #container {
-    padding: 50px 0px;
     width: 80vw;
     margin: auto;
-    border: black 3px solid;
-    border-radius: 15px;
-    background-image: linear-gradient(160deg, white, gray);
-    min-height: 70vh;
-    box-shadow: 0px 0px 10px black;
-
+    background-color: #f2f2f2;
+    color: #222;
+    padding: 50px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-content: center;
-    justify-content: space-evenly;
     align-items: center;
+
+    border: #222 solid 3px;
+    border-radius: 20px;
+    box-shadow: black 0px 0px 14px;
 }
 
-#container, .button {
-    border: black 3px solid;
-    border-radius: 15px;
+#counter {
+    background-color: #ddd;
+    font-size: 5em;
+    font-family: monospace;
+    padding: 0px 10px;
+    border: #999 solid 5px;
+    border-radius: 0px;
+    margin: 20px;
+    color: #666;
 }
 
-.button {
-    width: fit-content;
-    padding: 10px;
-    font-weight: bold;
-    background-color: rgb(195, 195, 195);
+button {
+    border-radius: 0px;
+    margin: 20px;
+    font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 1.5em;
+    border: #555 solid 3px;
+    border-radius: 20px;
+    padding: 7px 10px;
+    background-color: #ddd;
+    box-shadow: #777 0px 0px 10px;
 }
 
-#start-button {
-    box-shadow: 0px 0px 5px black;
-}
-
-#timer {
-    color: lime;
+div > #times-list {
     font-size: 2em;
-    font-weight: bolder;
-    text-shadow: 0px 0px 10px lime;
-    background-color: black;
-    padding: 20px;
-    border: rgb(74, 74, 74) solid 6px;
-    border-radius: 10px;
-    font-family: "BigBlue TerminalPlus";
-    box-shadow: 0px 0px 20px black;
 }
 
-.button:hover {
-    background-color: white;
-}
-
-@font-face {
-    font-family: "BigBlue TerminalPlus";
-    src: url(BigBlue_TerminalPlus.TTF);
+#logo {
+    width: 20em;
 }
