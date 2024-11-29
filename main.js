@@ -91,7 +91,7 @@ function saveTimesArrangementToFile() {
 
     const fileContent = output.join('\n');
 
-    saveToFile('times-arrangement.txt', fileContent);
+    saveToFile('Contagens.txt', fileContent);
 }
 
 saveButton.onclick = saveTimesArrangementToFile

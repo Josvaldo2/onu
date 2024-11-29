@@ -49,6 +49,8 @@ button {
     padding: 0.25em 0.5em;
     background-color: #ddd;
     box-shadow: #777 0px 0px 10px;
+
+    transition: background-color .2s, transform .2s;
 }
 
 div > #times-list {
@@ -65,7 +67,7 @@ div > #times-list {
     text-align: left;
     margin: 1em;
     box-shadow: #777 0px 0px 10px;
-
+    transition: background-color .2s, transform .2s;
 }
 
 
@@ -88,8 +90,8 @@ div > #times-list {
     padding: 0.2em;
 }
 
-#save-button {
-    margin: 2em;
+.erase-lap {
+    transition: background-color .2s;
 }
 
 #header {
@@ -138,4 +140,13 @@ div > #times-list {
 
 :focus-visible {
     outline: none;
+}
+
+button:hover, .times-arrangement:hover {
+    background-color: white;
+    transform: scale(1.1);
+}
+
+.erase-lap:hover {
+    background-color: rgb(255, 155, 155);
 }
