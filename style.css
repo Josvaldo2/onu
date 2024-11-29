@@ -53,17 +53,19 @@ button {
 
 div > #times-list {
     font-size: 2em;
-    margin: 2em;
+    margin: 1em;
 }
 
 .times-arrangement {
     background-color: #ddd;
-    border: #999 solid 0.14em;
+    border: #555 solid 0.14em;
     border-radius: 8px;
     display: flex;
     font-size: 0.7em;
-    margin: 1em;
     text-align: left;
+    margin: 1em;
+    box-shadow: #777 0px 0px 10px;
+
 }
 
 
@@ -86,6 +88,9 @@ div > #times-list {
     padding: 0.2em;
 }
 
+#save-button {
+    margin: 2em;
+}
 
 #header {
     display: flex;
