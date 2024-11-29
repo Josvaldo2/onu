@@ -1,12 +1,12 @@
 body {
-    font-size: 1vw;
+    font-size: 1vmax;
     font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
     text-align: center;
 
     margin: 0;
-    padding: 30px 00px;
-    background-color: #009edb
+    padding: 2em 0em;
+    background-color: #009edb;
 }
 
 #container {
@@ -14,14 +14,14 @@ body {
     margin: auto;
     background-color: #f2f2f2;
     color: #222;
-    padding: 50px;
+    padding: 0em 3em;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-content: center;
     align-items: center;
 
-    border: #222 solid 3px;
+    border: #222 solid 0.2em;
     border-radius: 20px;
     box-shadow: black 0px 0px 14px;
 }
@@ -30,30 +30,107 @@ body {
     background-color: #ddd;
     font-size: 5em;
     font-family: monospace;
-    padding: 0px 10px;
-    border: #999 solid 5px;
+    padding: 0em 0.3em;
+    border: #999 solid 0.1em;
     border-radius: 0px;
-    margin: 20px;
+    margin: 0.3em;
     color: #666;
+    font-weight: 100;
 }
 
 button {
     border-radius: 0px;
-    margin: 20px;
+    margin: 0.6em;
     font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
     font-size: 1.5em;
-    border: #555 solid 3px;
+    border: #555 solid 0.12em;
     border-radius: 20px;
-    padding: 7px 10px;
+    padding: 0.25em 0.5em;
     background-color: #ddd;
     box-shadow: #777 0px 0px 10px;
 }
 
 div > #times-list {
     font-size: 2em;
+    margin: 2em;
 }
+
+.times-arrangement {
+    background-color: #ddd;
+    border: #999 solid 0.14em;
+    border-radius: 8px;
+    display: flex;
+    font-size: 0.7em;
+    margin: 1em;
+    text-align: left;
+}
+
+
+.lap-name {
+    flex: 1;
+    overflow: hidden;
+    white-space: nowrap;
+    min-width: 3em;
+}
+
+.lap-duration, .lap-start {
+    flex: 0;
+}
+
+.lap-duration, .lap-name, .lap-start {
+    border-right: #999 solid 0.14em;
+}
+
+.times-arrangement > span {
+    padding: 0.2em;
+}
+
+
+#header {
+    display: flex;
+    height: fit-content;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-end;
+    text-align: left;
+    font-size: 0.9em;
+    margin: 25px 0px;
+
+    border-bottom: #555 2px solid;
+    padding-bottom: 0.3em;
+}
+
+#left-header-side {
+    display: flex;
+    width: inherit;
+    align-items: flex-end;
+
+}
+
+#right-header-side {
+    text-align: right;
+    width: inherit;
+}
+
+#header-logo {
+    width: 6em;
+    margin: 0.3em;
+}
+
 
 #logo {
     width: 20em;
+}
+
+#title {
+    font-size: 2em;
+}
+
+#header h1 {
+    margin: 0;
+}
+
+:focus-visible {
+    outline: none;
 }
