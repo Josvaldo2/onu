@@ -6,7 +6,7 @@ body {
 
     margin: 0;
     padding: 2em 0em;
-    background-color: #009edb;
+    background-color: #1a4766;
 }
 
 #container {
@@ -110,7 +110,7 @@ div > #times-list {
 
 #left-header-side {
     display: flex;
-    width: inherit;
+    width: 300em;
     align-items: flex-end;
 
 }
@@ -120,14 +120,20 @@ div > #times-list {
     width: inherit;
 }
 
-#header-logo {
+.header-logo {
     width: 6em;
-    margin: 0.3em;
+    margin: 0.3em 1.5em;
 }
 
 
 #logo {
     width: 20em;
+}
+
+#rv-logo {
+    width: 6em;
+    margin-top: 4em;
+    margin-right: -85vw;
 }
 
 #title {

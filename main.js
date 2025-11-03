@@ -38,7 +38,7 @@ function mainCounterFunction() {
 
         const lapDiv = document.createElement("div");
         lapDiv.className = "times-arrangement"
-        const countString = `${minutes < 10 ? "0"+minutes : minutes}:${seconds < 10 ? "0"+seconds : seconds}`;
+        const countString = `${minutes < 10 ? "0" + minutes : minutes}:${seconds < 10 ? "0" + seconds : seconds}`;
         const countStartString = `${String(startTime.getHours()).padStart(2, '0')}:${String(startTime.getMinutes()).padStart(2, '0')}`
         
 
@@ -97,4 +97,4 @@ function saveTimesArrangementToFile() {
 saveButton.onclick = saveTimesArrangementToFile
 mainButton.onclick = mainCounterFunction;
 
-console.log("%cProgramado por Augusto V.\nT. 201", "color: cyan; font-size: 35px");
+console.log("%cProgramado por Augusto V.\nT. 301", "color: deeppink; font-size: 35px");
